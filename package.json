@@ -1,17 +1,18 @@
 {
   "name": "bridge-scorer",
   "description": " collection of duplicate bridge scoring algorithms.",
-  "homepage": "https://github.com/richardschneider/bridge-scorer",
-  "bugs": "https://github.com/richardschneider/bridge-scorer/issues",
+  "homepage": "https://github.com/tclbe/bridge-scorer",
+  "bugs": "https://github.com/tclbe/bridge-scorer/issues",
   "license": "MIT",
   "main": "index.js",
   "author": {
-    "name": "Richard Schneider",
-    "email": "makaretu@gmail.com"
+    "name": "Caleb",
+    "email": "abc@abc.com"
   },
+  "version": "2.4.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/richardschneider/bridge-scorer"
+    "url": "https://github.com/tclbe/bridge-scorer"
   },
   "keywords": [
     "bridge",
@@ -24,10 +25,12 @@
     "butler",
     "cross-imps"
   ],
-  "dependencies": {},
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "@typescript-eslint/parser": "^5.48.1",
     "browserify": "^14.3.0",
     "chai": "^4.0.2",
+    "eslint": "^8.31.0",
     "glob": "^7.0.6",
     "gulp": "^3.9.1",
     "gulp-coveralls": "^0.1.4",
@@ -39,13 +42,15 @@
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
     "mocha": "^3.4.1",
+    "prettier": "^2.8.2",
     "pump": "^1.0.2",
+    "semantic-release": "^6.3.6",
+    "typescript": "^4.9.4",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0",
-    "semantic-release": "^6.3.6"
+    "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "test": "mocha test",
+    "test": "tsc; mocha test",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   }
 }
