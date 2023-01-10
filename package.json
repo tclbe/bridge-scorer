@@ -4,7 +4,8 @@
   "homepage": "https://github.com/tclbe/bridge-scorer",
   "bugs": "https://github.com/tclbe/bridge-scorer/issues",
   "license": "MIT",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": {
     "name": "Caleb",
     "email": "abc@abc.com"

@@ -1,6 +1,6 @@
 import { BoardResult } from "./result";
 
-function matchpoints(
+export function matchpoints(
   results: BoardResult[],
   scoring: { win: number; tie: number }
 ) {
@@ -83,11 +83,9 @@ function matchpoints(
   return mpsScore;
 }
 
-module.exports = {
-  standard: function (games) {
-    return matchpoints(games, { win: 2, tie: 1 });
-  },
-  ACBL: function (games) {
-    return matchpoints(games, { win: 1.0, tie: 0.5 });
-  },
-};
+export function standard(games: BoardResult[]) {
+  return matchpoints(games, { win: 2, tie: 1 });
+}
+export function ACBL(games: BoardResult[]) {
+  return matchpoints(games, { win: 1.0, tie: 0.5 });
+}
