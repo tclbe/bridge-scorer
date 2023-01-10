@@ -1,7 +1,0 @@
-node_modules/
-test/
-temp/
-.DS_Store
-.idea
-coverage/
-lib/

@@ -25,6 +25,9 @@
     "butler",
     "cross-imps"
   ],
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
